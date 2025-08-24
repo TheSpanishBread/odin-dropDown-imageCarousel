@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: 1px solid red;
+}
+body {
+  font-family: "Roboto";
+  padding: 1rem;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Norse";
+  src: url("./fonts/Norse-Bold.otf");
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+img[src$=".svg"] {
+  width: 3rem;
+}
+/* HEADEr */
+header {
+  font-family: "Norse";
+  font-size: 2rem;
+  text-align: center;
+}
+/* /*MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dropDown {
+  height: 80vh;
+}
+.dropDownButtons {
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.dropDownContent {
+  cursor: pointer;
+}
+.dropDownTitle {
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: 0.4s;
+  border-radius: 0.5rem;
+  background-color: antiquewhite;
+}
+.dropDownTitle:hover,
+.dropDownTitle:active {
+  transform: scale(1.1);
+}
+.dropDownItems {
+  position: relative;
+}
+.dropDownItems li {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+.carousel {
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+}
+#carouselControls {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#leftRight {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 10;
+}
+#leftRight button {
+  background-color: unset;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#leftRight button:hover,
+#leftRight button:active {
+  transform: scale(1.3);
+}
+#dots {
+  gap: 3rem;
+  z-index: 10;
+}
+#dots > button {
+  gap: 1rem;
+  color: white;
+  background-color: unset;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
